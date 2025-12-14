@@ -3,7 +3,8 @@ This repository implements a transformer architecture in which attention is repl
 
 **Repository:** `KevinHaylett/takens-embedding-transformer`  
 **Author:** Kevin R. Haylett  
-**Licence:** Mozilla Public License 2.0 (MPL-2.0)
+**Licence:** Mozilla Public License 2.0 (MPL-2.0)  
+**Implementation:** This code implements the architecture described in ‘Introducing the Takens-Based Transformer’ (Haylett, 2025)
 
 ---
 
@@ -87,10 +88,10 @@ If you build upon, extend, or reference this work, academic citation or explicit
 
 ### To cite the paper
 
-Haylett, K. R. (2025).  
-*Introducing the Takens Embedding Transformer*.  
-Available at:  
-https://www.finitemechanics.com/papers/takens-transformer-krh.pdf
+If you use, implement, or build upon the Takens-Based Transformer, please cite the canonical paper:
+
+Kevin R. Haylett, Introducing the Takens-Based Transformer, December 2025.
+Available at: https://finitemechanics.com/papers/takens-transformer.pdf
 
 ### To cite the code repository
 
