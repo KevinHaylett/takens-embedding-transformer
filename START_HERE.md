@@ -6,6 +6,38 @@ This repository demonstrates that **attention mechanisms in transformers can be 
 
 ---
 
+## Model File Structure
+
+As currently implemented, the inference modules expect models to follow this structure:
+
+Main working Directory: C:\Marina\
+
+\models\model_name\model.pt
+
+\models\model_name\vocabulary.json
+
+During training, when a new model is created using the unified_training module, the generated model and vocabulary files are written to the root directory by default. These files must be manually moved into the appropriate \models\model_name\ directory before inference can be run.
+
+**File paths can be modified within the relevant modules to suit alternative directory layouts. If you do so, ensure that all file references remain consistent, particularly within:**
+
+unified_training
+
+unified_run
+
+unified_run_vocab_check
+
+**GitHub File Size Constraints**
+
+Due to GitHub file size limits, larger trained models are not included in the repository. These models must be built locally from the provided training data using the unified_training module.
+
+**Once a model has been trained and placed in the correct directory, inference can be performed using either:**
+
+unified_run
+
+unified_run_vocab_check
+
+---
+
 ## ⚠️ Important: This is Proof-of-Principle Code
 
 This software was developed **purely to demonstrate that the core idea works**. It is:
