@@ -1,0 +1,571 @@
+runfile('C:/Marina/unified_training.py', wdir='C:/Marina')
+======================================================================
+Marina Unified Training System
+CSV + Plain Text Support
+======================================================================
+
+📁 Input file: c:\Marina\models\corpus_ancora\corpus_ancora.txt
+   Format detected: Plain text file
+   Data format: TEXT
+   Encoding mode: CONTINUOUS
+   Model will save to: corpus_ancora_model.pt
+   Vocab will save to: corpus_ancora_vocab.json
+
+Chunking mode: sliding
+
+Strategy:
+  Encoding: Continuous text stream (all VISIBLE)
+  Chunking: sliding windows (stride=128)
+
+1. Building vocabulary...
+   Processing 80 text segments...
+Vocabulary built: 7748 words
+   Vocabulary: 7748 words
+   Saved to: corpus_ancora_vocab.json
+
+2. Creating dataset...
+FlexibleMVecDataset Configuration:
+  Mode: sliding
+  Format: text
+  Max sequence length: 256
+  Created 444 training sequences
+   Total samples: 444
+   Training samples: 400
+   Validation samples: 44
+
+   Sample 0: 256 tokens
+   Channels: {'USER': 256}
+
+3. Creating model...
+   Parameters: 2,704,422
+   Device: cpu
+
+4. Training...
+   Epochs: 50
+   Batch size: 8
+   Learning rate: 0.0003
+
+Epoch 1/50
+----------------------------------------------------------------------
+Training: 100%|██████████| 50/50 [00:14<00:00,  3.34it/s, loss=8.2495, word=8.2002, end=0.0494]
+Train - Loss: 8.0937 | Word: 8.0514 | End: 0.0423
+Validating: 100%|██████████| 6/6 [00:00<00:00, 17.86it/s]
+Val   - Loss: 7.1954 | Word: 7.1877 | End: 0.0077
+[SAVED] Best model saved to corpus_ancora_model.pt
+Learning Rate: 0.000300
+
+Epoch 2/50
+----------------------------------------------------------------------
+Training: 100%|██████████| 50/50 [00:14<00:00,  3.44it/s, loss=6.7745, word=6.7694, end=0.0051]
+Train - Loss: 6.7016 | Word: 6.6969 | End: 0.0048
+Validating: 100%|██████████| 6/6 [00:00<00:00, 20.27it/s]
+Val   - Loss: 6.3328 | Word: 6.3299 | End: 0.0029
+[SAVED] Best model saved to corpus_ancora_model.pt
+Learning Rate: 0.000299
+
+Epoch 3/50
+----------------------------------------------------------------------
+Training: 100%|██████████| 50/50 [00:14<00:00,  3.41it/s, loss=6.1115, word=6.1081, end=0.0034]
+Train - Loss: 6.0694 | Word: 6.0660 | End: 0.0034
+Validating: 100%|██████████| 6/6 [00:00<00:00, 13.59it/s]
+Val   - Loss: 5.9170 | Word: 5.9135 | End: 0.0035
+[SAVED] Best model saved to corpus_ancora_model.pt
+Learning Rate: 0.000298
+
+Epoch 4/50
+----------------------------------------------------------------------
+Training: 100%|██████████| 50/50 [00:15<00:00,  3.28it/s, loss=5.6717, word=5.6677, end=0.0041]
+Train - Loss: 5.6362 | Word: 5.6322 | End: 0.0040
+Validating: 100%|██████████| 6/6 [00:00<00:00, 19.75it/s]
+Val   - Loss: 5.6176 | Word: 5.6143 | End: 0.0033
+[SAVED] Best model saved to corpus_ancora_model.pt
+Learning Rate: 0.000296
+
+Epoch 5/50
+----------------------------------------------------------------------
+Training: 100%|██████████| 50/50 [00:14<00:00,  3.41it/s, loss=5.2801, word=5.2749, end=0.0051]
+Train - Loss: 5.2647 | Word: 5.2595 | End: 0.0051
+Validating: 100%|██████████| 6/6 [00:00<00:00, 17.53it/s]
+Val   - Loss: 5.3991 | Word: 5.3958 | End: 0.0034
+[SAVED] Best model saved to corpus_ancora_model.pt
+Learning Rate: 0.000293
+
+Epoch 6/50
+----------------------------------------------------------------------
+Training: 100%|██████████| 50/50 [00:14<00:00,  3.40it/s, loss=4.9642, word=4.9583, end=0.0059]
+Train - Loss: 4.9509 | Word: 4.9450 | End: 0.0059
+Validating: 100%|██████████| 6/6 [00:00<00:00, 19.87it/s]
+Val   - Loss: 5.2251 | Word: 5.2213 | End: 0.0038
+[SAVED] Best model saved to corpus_ancora_model.pt
+Learning Rate: 0.000291
+
+Epoch 7/50
+----------------------------------------------------------------------
+Training: 100%|██████████| 50/50 [00:15<00:00,  3.22it/s, loss=4.6945, word=4.6881, end=0.0064]
+Train - Loss: 4.6794 | Word: 4.6731 | End: 0.0063
+Validating: 100%|██████████| 6/6 [00:00<00:00, 13.15it/s]
+Val   - Loss: 5.0881 | Word: 5.0851 | End: 0.0030
+[SAVED] Best model saved to corpus_ancora_model.pt
+Learning Rate: 0.000287
+
+Epoch 8/50
+----------------------------------------------------------------------
+Training: 100%|██████████| 50/50 [00:15<00:00,  3.17it/s, loss=4.4512, word=4.4445, end=0.0067]
+Train - Loss: 4.4404 | Word: 4.4338 | End: 0.0066
+Validating: 100%|██████████| 6/6 [00:00<00:00, 19.08it/s]
+Val   - Loss: 4.9799 | Word: 4.9754 | End: 0.0045
+[SAVED] Best model saved to corpus_ancora_model.pt
+Learning Rate: 0.000283
+
+Epoch 9/50
+----------------------------------------------------------------------
+Training: 100%|██████████| 50/50 [00:15<00:00,  3.25it/s, loss=4.2530, word=4.2464, end=0.0066]
+Train - Loss: 4.2390 | Word: 4.2325 | End: 0.0065
+Validating: 100%|██████████| 6/6 [00:00<00:00, 14.46it/s]
+Val   - Loss: 4.8984 | Word: 4.8942 | End: 0.0042
+[SAVED] Best model saved to corpus_ancora_model.pt
+Learning Rate: 0.000279
+
+Epoch 10/50
+----------------------------------------------------------------------
+Training: 100%|██████████| 50/50 [00:14<00:00,  3.38it/s, loss=4.0628, word=4.0563, end=0.0065]
+Train - Loss: 4.0583 | Word: 4.0520 | End: 0.0063
+Validating: 100%|██████████| 6/6 [00:00<00:00, 19.32it/s]
+Val   - Loss: 4.8078 | Word: 4.8028 | End: 0.0049
+[SAVED] Best model saved to corpus_ancora_model.pt
+Learning Rate: 0.000274
+
+Epoch 11/50
+----------------------------------------------------------------------
+Training: 100%|██████████| 50/50 [00:16<00:00,  3.07it/s, loss=3.8922, word=3.8862, end=0.0060]
+Train - Loss: 3.8873 | Word: 3.8812 | End: 0.0061
+Validating: 100%|██████████| 6/6 [00:00<00:00, 17.66it/s]
+Val   - Loss: 4.7354 | Word: 4.7307 | End: 0.0047
+[SAVED] Best model saved to corpus_ancora_model.pt
+Learning Rate: 0.000269
+
+Epoch 12/50
+----------------------------------------------------------------------
+Training: 100%|██████████| 50/50 [00:15<00:00,  3.26it/s, loss=3.7359, word=3.7297, end=0.0062]
+Train - Loss: 3.7351 | Word: 3.7291 | End: 0.0060
+Validating: 100%|██████████| 6/6 [00:00<00:00, 18.15it/s]
+Val   - Loss: 4.6824 | Word: 4.6779 | End: 0.0045
+[SAVED] Best model saved to corpus_ancora_model.pt
+Learning Rate: 0.000263
+
+Epoch 13/50
+----------------------------------------------------------------------
+Training: 100%|██████████| 50/50 [00:14<00:00,  3.44it/s, loss=3.5999, word=3.5941, end=0.0058]
+Train - Loss: 3.5916 | Word: 3.5859 | End: 0.0057
+Validating: 100%|██████████| 6/6 [00:00<00:00, 18.34it/s]
+Val   - Loss: 4.6217 | Word: 4.6177 | End: 0.0041
+[SAVED] Best model saved to corpus_ancora_model.pt
+Learning Rate: 0.000257
+
+Epoch 14/50
+----------------------------------------------------------------------
+Training: 100%|██████████| 50/50 [00:14<00:00,  3.42it/s, loss=3.4674, word=3.4617, end=0.0058]
+Train - Loss: 3.4628 | Word: 3.4572 | End: 0.0056
+Validating: 100%|██████████| 6/6 [00:00<00:00, 19.48it/s]
+Val   - Loss: 4.5758 | Word: 4.5716 | End: 0.0042
+[SAVED] Best model saved to corpus_ancora_model.pt
+Learning Rate: 0.000251
+
+Epoch 15/50
+----------------------------------------------------------------------
+Training: 100%|██████████| 50/50 [00:16<00:00,  3.01it/s, loss=3.3350, word=3.3297, end=0.0053]
+Train - Loss: 3.3425 | Word: 3.3371 | End: 0.0055
+Validating: 100%|██████████| 6/6 [00:00<00:00, 16.27it/s]
+Val   - Loss: 4.5292 | Word: 4.5246 | End: 0.0046
+[SAVED] Best model saved to corpus_ancora_model.pt
+Learning Rate: 0.000244
+
+Epoch 16/50
+----------------------------------------------------------------------
+Training: 100%|██████████| 50/50 [00:14<00:00,  3.34it/s, loss=3.2393, word=3.2340, end=0.0053]
+Train - Loss: 3.2276 | Word: 3.2224 | End: 0.0052
+Validating: 100%|██████████| 6/6 [00:00<00:00, 17.01it/s]
+Val   - Loss: 4.4783 | Word: 4.4739 | End: 0.0043
+[SAVED] Best model saved to corpus_ancora_model.pt
+Learning Rate: 0.000237
+
+Epoch 17/50
+----------------------------------------------------------------------
+Training: 100%|██████████| 50/50 [00:16<00:00,  3.05it/s, loss=3.1273, word=3.1223, end=0.0050]
+Train - Loss: 3.1244 | Word: 3.1193 | End: 0.0050
+Validating: 100%|██████████| 6/6 [00:00<00:00, 17.87it/s]
+Val   - Loss: 4.4480 | Word: 4.4441 | End: 0.0039
+[SAVED] Best model saved to corpus_ancora_model.pt
+Learning Rate: 0.000230
+
+Epoch 18/50
+----------------------------------------------------------------------
+Training: 100%|██████████| 50/50 [00:14<00:00,  3.40it/s, loss=3.0349, word=3.0299, end=0.0049]
+Train - Loss: 3.0249 | Word: 3.0199 | End: 0.0050
+Validating: 100%|██████████| 6/6 [00:00<00:00, 19.49it/s]
+Val   - Loss: 4.4093 | Word: 4.4062 | End: 0.0031
+[SAVED] Best model saved to corpus_ancora_model.pt
+Learning Rate: 0.000222
+
+Epoch 19/50
+----------------------------------------------------------------------
+Training: 100%|██████████| 50/50 [00:15<00:00,  3.30it/s, loss=2.9214, word=2.9165, end=0.0049]
+Train - Loss: 2.9271 | Word: 2.9222 | End: 0.0048
+Validating: 100%|██████████| 6/6 [00:00<00:00, 19.12it/s]
+Val   - Loss: 4.3720 | Word: 4.3680 | End: 0.0040
+[SAVED] Best model saved to corpus_ancora_model.pt
+Learning Rate: 0.000215
+
+Epoch 20/50
+----------------------------------------------------------------------
+Training: 100%|██████████| 50/50 [00:14<00:00,  3.46it/s, loss=2.8424, word=2.8377, end=0.0047]
+Train - Loss: 2.8429 | Word: 2.8382 | End: 0.0047
+Validating: 100%|██████████| 6/6 [00:00<00:00, 14.42it/s]
+Val   - Loss: 4.3435 | Word: 4.3398 | End: 0.0037
+[SAVED] Best model saved to corpus_ancora_model.pt
+Learning Rate: 0.000207
+
+Epoch 21/50
+----------------------------------------------------------------------
+Training: 100%|██████████| 50/50 [00:15<00:00,  3.22it/s, loss=2.7590, word=2.7542, end=0.0047]
+Train - Loss: 2.7586 | Word: 2.7540 | End: 0.0046
+Validating: 100%|██████████| 6/6 [00:00<00:00, 18.90it/s]
+Val   - Loss: 4.3202 | Word: 4.3168 | End: 0.0034
+[SAVED] Best model saved to corpus_ancora_model.pt
+Learning Rate: 0.000199
+
+Epoch 22/50
+----------------------------------------------------------------------
+Training: 100%|██████████| 50/50 [00:15<00:00,  3.32it/s, loss=2.6682, word=2.6637, end=0.0045]
+Train - Loss: 2.6769 | Word: 2.6723 | End: 0.0046
+Validating: 100%|██████████| 6/6 [00:00<00:00, 19.00it/s]
+Val   - Loss: 4.2896 | Word: 4.2859 | End: 0.0037
+[SAVED] Best model saved to corpus_ancora_model.pt
+Learning Rate: 0.000190
+
+Epoch 23/50
+----------------------------------------------------------------------
+Training: 100%|██████████| 50/50 [00:16<00:00,  3.04it/s, loss=2.5921, word=2.5876, end=0.0045]
+Train - Loss: 2.5968 | Word: 2.5923 | End: 0.0045
+Validating: 100%|██████████| 6/6 [00:00<00:00, 19.14it/s]
+Val   - Loss: 4.2645 | Word: 4.2608 | End: 0.0037
+[SAVED] Best model saved to corpus_ancora_model.pt
+Learning Rate: 0.000182
+
+Epoch 24/50
+----------------------------------------------------------------------
+Training: 100%|██████████| 50/50 [00:14<00:00,  3.34it/s, loss=2.5291, word=2.5247, end=0.0044]
+Train - Loss: 2.5279 | Word: 2.5234 | End: 0.0044
+Validating: 100%|██████████| 6/6 [00:00<00:00, 19.80it/s]
+Val   - Loss: 4.2474 | Word: 4.2442 | End: 0.0032
+[SAVED] Best model saved to corpus_ancora_model.pt
+Learning Rate: 0.000173
+
+Epoch 25/50
+----------------------------------------------------------------------
+Training: 100%|██████████| 50/50 [00:14<00:00,  3.36it/s, loss=2.4626, word=2.4582, end=0.0044]
+Train - Loss: 2.4590 | Word: 2.4546 | End: 0.0044
+Validating: 100%|██████████| 6/6 [00:00<00:00, 17.01it/s]
+Val   - Loss: 4.2203 | Word: 4.2171 | End: 0.0033
+[SAVED] Best model saved to corpus_ancora_model.pt
+Learning Rate: 0.000165
+
+Epoch 26/50
+----------------------------------------------------------------------
+Training: 100%|██████████| 50/50 [00:18<00:00,  2.71it/s, loss=2.3892, word=2.3850, end=0.0042]
+Train - Loss: 2.3933 | Word: 2.3890 | End: 0.0043
+Validating: 100%|██████████| 6/6 [00:00<00:00, 11.76it/s]
+Val   - Loss: 4.2007 | Word: 4.1976 | End: 0.0031
+[SAVED] Best model saved to corpus_ancora_model.pt
+Learning Rate: 0.000157
+
+Epoch 27/50
+----------------------------------------------------------------------
+Training: 100%|██████████| 50/50 [00:16<00:00,  2.98it/s, loss=2.3266, word=2.3223, end=0.0043]
+Train - Loss: 2.3320 | Word: 2.3277 | End: 0.0042
+Validating: 100%|██████████| 6/6 [00:00<00:00, 18.91it/s]
+Val   - Loss: 4.1814 | Word: 4.1783 | End: 0.0032
+[SAVED] Best model saved to corpus_ancora_model.pt
+Learning Rate: 0.000148
+
+Epoch 28/50
+----------------------------------------------------------------------
+Training: 100%|██████████| 50/50 [00:15<00:00,  3.19it/s, loss=2.2794, word=2.2752, end=0.0042]
+Train - Loss: 2.2769 | Word: 2.2728 | End: 0.0041
+Validating: 100%|██████████| 6/6 [00:00<00:00, 19.67it/s]
+Val   - Loss: 4.1581 | Word: 4.1545 | End: 0.0036
+[SAVED] Best model saved to corpus_ancora_model.pt
+Learning Rate: 0.000140
+
+Epoch 29/50
+----------------------------------------------------------------------
+Training: 100%|██████████| 50/50 [00:15<00:00,  3.19it/s, loss=2.2179, word=2.2137, end=0.0042]
+Train - Loss: 2.2217 | Word: 2.2175 | End: 0.0042
+Validating: 100%|██████████| 6/6 [00:00<00:00, 17.39it/s]
+Val   - Loss: 4.1448 | Word: 4.1418 | End: 0.0030
+[SAVED] Best model saved to corpus_ancora_model.pt
+Learning Rate: 0.000131
+
+Epoch 30/50
+----------------------------------------------------------------------
+Training: 100%|██████████| 50/50 [00:16<00:00,  3.05it/s, loss=2.1682, word=2.1641, end=0.0041]
+Train - Loss: 2.1747 | Word: 2.1707 | End: 0.0041
+Validating: 100%|██████████| 6/6 [00:00<00:00, 16.52it/s]
+Val   - Loss: 4.1321 | Word: 4.1293 | End: 0.0028
+[SAVED] Best model saved to corpus_ancora_model.pt
+Learning Rate: 0.000123
+
+Epoch 31/50
+----------------------------------------------------------------------
+Training: 100%|██████████| 50/50 [00:15<00:00,  3.17it/s, loss=2.1284, word=2.1243, end=0.0041]
+Train - Loss: 2.1271 | Word: 2.1231 | End: 0.0040
+Validating: 100%|██████████| 6/6 [00:00<00:00, 19.43it/s]
+Val   - Loss: 4.1120 | Word: 4.1090 | End: 0.0030
+[SAVED] Best model saved to corpus_ancora_model.pt
+Learning Rate: 0.000115
+
+Epoch 32/50
+----------------------------------------------------------------------
+Training: 100%|██████████| 50/50 [00:15<00:00,  3.24it/s, loss=2.0877, word=2.0837, end=0.0040]
+Train - Loss: 2.0842 | Word: 2.0802 | End: 0.0040
+Validating: 100%|██████████| 6/6 [00:00<00:00, 17.22it/s]
+Val   - Loss: 4.1066 | Word: 4.1037 | End: 0.0029
+[SAVED] Best model saved to corpus_ancora_model.pt
+Learning Rate: 0.000108
+
+Epoch 33/50
+----------------------------------------------------------------------
+Training: 100%|██████████| 50/50 [00:15<00:00,  3.23it/s, loss=2.0344, word=2.0306, end=0.0039]
+Train - Loss: 2.0417 | Word: 2.0378 | End: 0.0039
+Validating: 100%|██████████| 6/6 [00:00<00:00, 15.92it/s]
+Val   - Loss: 4.0879 | Word: 4.0848 | End: 0.0031
+[SAVED] Best model saved to corpus_ancora_model.pt
+Learning Rate: 0.000100
+
+Epoch 34/50
+----------------------------------------------------------------------
+Training: 100%|██████████| 50/50 [00:16<00:00,  3.10it/s, loss=2.0031, word=1.9991, end=0.0040]
+Train - Loss: 2.0035 | Word: 1.9996 | End: 0.0039
+Validating: 100%|██████████| 6/6 [00:00<00:00, 19.58it/s]
+Val   - Loss: 4.0769 | Word: 4.0738 | End: 0.0031
+[SAVED] Best model saved to corpus_ancora_model.pt
+Learning Rate: 0.000093
+
+Epoch 35/50
+----------------------------------------------------------------------
+Training: 100%|██████████| 50/50 [00:15<00:00,  3.16it/s, loss=1.9772, word=1.9732, end=0.0040]
+Train - Loss: 1.9697 | Word: 1.9658 | End: 0.0039
+Validating: 100%|██████████| 6/6 [00:00<00:00, 18.13it/s]
+Val   - Loss: 4.0666 | Word: 4.0635 | End: 0.0031
+[SAVED] Best model saved to corpus_ancora_model.pt
+Learning Rate: 0.000086
+
+Epoch 36/50
+----------------------------------------------------------------------
+Training: 100%|██████████| 50/50 [00:15<00:00,  3.26it/s, loss=1.9303, word=1.9264, end=0.0039]
+Train - Loss: 1.9366 | Word: 1.9327 | End: 0.0039
+Validating: 100%|██████████| 6/6 [00:00<00:00, 18.09it/s]
+Val   - Loss: 4.0539 | Word: 4.0508 | End: 0.0031
+[SAVED] Best model saved to corpus_ancora_model.pt
+Learning Rate: 0.000079
+
+Epoch 37/50
+----------------------------------------------------------------------
+Training: 100%|██████████| 50/50 [00:16<00:00,  3.12it/s, loss=1.9057, word=1.9017, end=0.0039]
+Train - Loss: 1.9041 | Word: 1.9002 | End: 0.0039
+Validating: 100%|██████████| 6/6 [00:00<00:00, 15.93it/s]
+Val   - Loss: 4.0491 | Word: 4.0462 | End: 0.0030
+[SAVED] Best model saved to corpus_ancora_model.pt
+Learning Rate: 0.000073
+
+Epoch 38/50
+----------------------------------------------------------------------
+Training: 100%|██████████| 50/50 [00:15<00:00,  3.26it/s, loss=1.8837, word=1.8798, end=0.0038]
+Train - Loss: 1.8778 | Word: 1.8740 | End: 0.0038
+Validating: 100%|██████████| 6/6 [00:00<00:00, 19.10it/s]
+Val   - Loss: 4.0396 | Word: 4.0366 | End: 0.0030
+[SAVED] Best model saved to corpus_ancora_model.pt
+Learning Rate: 0.000067
+
+Epoch 39/50
+----------------------------------------------------------------------
+Training: 100%|██████████| 50/50 [00:15<00:00,  3.28it/s, loss=1.8608, word=1.8569, end=0.0039]
+Train - Loss: 1.8520 | Word: 1.8481 | End: 0.0038
+Validating: 100%|██████████| 6/6 [00:00<00:00, 19.58it/s]
+Val   - Loss: 4.0303 | Word: 4.0273 | End: 0.0030
+[SAVED] Best model saved to corpus_ancora_model.pt
+Learning Rate: 0.000061
+
+Epoch 40/50
+----------------------------------------------------------------------
+Training: 100%|██████████| 50/50 [00:15<00:00,  3.28it/s, loss=1.8232, word=1.8195, end=0.0037]
+Train - Loss: 1.8280 | Word: 1.8243 | End: 0.0037
+Validating: 100%|██████████| 6/6 [00:00<00:00, 16.49it/s]
+Val   - Loss: 4.0262 | Word: 4.0231 | End: 0.0031
+[SAVED] Best model saved to corpus_ancora_model.pt
+Learning Rate: 0.000056
+
+Epoch 41/50
+----------------------------------------------------------------------
+Training: 100%|██████████| 50/50 [00:16<00:00,  3.10it/s, loss=1.8036, word=1.7999, end=0.0037]
+Train - Loss: 1.8089 | Word: 1.8051 | End: 0.0038
+Validating: 100%|██████████| 6/6 [00:00<00:00, 17.55it/s]
+Val   - Loss: 4.0214 | Word: 4.0183 | End: 0.0031
+[SAVED] Best model saved to corpus_ancora_model.pt
+Learning Rate: 0.000051
+
+Epoch 42/50
+----------------------------------------------------------------------
+Training: 100%|██████████| 50/50 [00:15<00:00,  3.17it/s, loss=1.7916, word=1.7879, end=0.0037]
+Train - Loss: 1.7882 | Word: 1.7845 | End: 0.0037
+Validating: 100%|██████████| 6/6 [00:00<00:00, 19.62it/s]
+Val   - Loss: 4.0155 | Word: 4.0125 | End: 0.0030
+[SAVED] Best model saved to corpus_ancora_model.pt
+Learning Rate: 0.000047
+
+Epoch 43/50
+----------------------------------------------------------------------
+Training: 100%|██████████| 50/50 [00:15<00:00,  3.15it/s, loss=1.7590, word=1.7553, end=0.0037]
+Train - Loss: 1.7698 | Word: 1.7661 | End: 0.0037
+Validating: 100%|██████████| 6/6 [00:00<00:00, 16.68it/s]
+Val   - Loss: 4.0108 | Word: 4.0078 | End: 0.0030
+[SAVED] Best model saved to corpus_ancora_model.pt
+Learning Rate: 0.000043
+
+Epoch 44/50
+----------------------------------------------------------------------
+Training: 100%|██████████| 50/50 [00:15<00:00,  3.22it/s, loss=1.7513, word=1.7477, end=0.0036]
+Train - Loss: 1.7547 | Word: 1.7510 | End: 0.0037
+Validating: 100%|██████████| 6/6 [00:00<00:00, 19.51it/s]
+Val   - Loss: 4.0063 | Word: 4.0032 | End: 0.0030
+[SAVED] Best model saved to corpus_ancora_model.pt
+Learning Rate: 0.000039
+
+Epoch 45/50
+----------------------------------------------------------------------
+Training: 100%|██████████| 50/50 [00:16<00:00,  3.07it/s, loss=1.7417, word=1.7380, end=0.0037]
+Train - Loss: 1.7388 | Word: 1.7351 | End: 0.0037
+Validating: 100%|██████████| 6/6 [00:00<00:00, 17.53it/s]
+Val   - Loss: 4.0003 | Word: 3.9974 | End: 0.0029
+[SAVED] Best model saved to corpus_ancora_model.pt
+Learning Rate: 0.000037
+
+Epoch 46/50
+----------------------------------------------------------------------
+Training: 100%|██████████| 50/50 [00:15<00:00,  3.22it/s, loss=1.7265, word=1.7228, end=0.0037]
+Train - Loss: 1.7247 | Word: 1.7210 | End: 0.0036
+Validating: 100%|██████████| 6/6 [00:00<00:00, 19.28it/s]
+Val   - Loss: 3.9959 | Word: 3.9930 | End: 0.0029
+[SAVED] Best model saved to corpus_ancora_model.pt
+Learning Rate: 0.000034
+
+Epoch 47/50
+----------------------------------------------------------------------
+Training: 100%|██████████| 50/50 [00:15<00:00,  3.20it/s, loss=1.7182, word=1.7145, end=0.0036]
+Train - Loss: 1.7103 | Word: 1.7067 | End: 0.0036
+Validating: 100%|██████████| 6/6 [00:00<00:00, 17.50it/s]
+Val   - Loss: 3.9941 | Word: 3.9912 | End: 0.0029
+[SAVED] Best model saved to corpus_ancora_model.pt
+Learning Rate: 0.000032
+
+Epoch 48/50
+----------------------------------------------------------------------
+Training: 100%|██████████| 50/50 [00:16<00:00,  3.07it/s, loss=1.6978, word=1.6942, end=0.0036]
+Train - Loss: 1.6991 | Word: 1.6955 | End: 0.0036
+Validating: 100%|██████████| 6/6 [00:00<00:00, 16.05it/s]
+Val   - Loss: 3.9931 | Word: 3.9902 | End: 0.0029
+[SAVED] Best model saved to corpus_ancora_model.pt
+Learning Rate: 0.000031
+
+Epoch 49/50
+----------------------------------------------------------------------
+Training: 100%|██████████| 50/50 [00:16<00:00,  3.11it/s, loss=1.6815, word=1.6779, end=0.0036]
+Train - Loss: 1.6881 | Word: 1.6845 | End: 0.0036
+Validating: 100%|██████████| 6/6 [00:00<00:00, 19.53it/s]
+Val   - Loss: 3.9886 | Word: 3.9857 | End: 0.0029
+[SAVED] Best model saved to corpus_ancora_model.pt
+Learning Rate: 0.000030
+
+Epoch 50/50
+----------------------------------------------------------------------
+Training: 100%|██████████| 50/50 [00:15<00:00,  3.17it/s, loss=1.6766, word=1.6730, end=0.0035]
+Train - Loss: 1.6804 | Word: 1.6769 | End: 0.0036
+Validating: 100%|██████████| 6/6 [00:00<00:00, 19.28it/s]
+Val   - Loss: 3.9851 | Word: 3.9821 | End: 0.0030
+[SAVED] Best model saved to corpus_ancora_model.pt
+Learning Rate: 0.000030
+
+======================================================================
+Training Complete!
+======================================================================
+Best validation loss: 3.9851
+Model saved to: corpus_ancora_model.pt
+Vocabulary saved to: corpus_ancora_vocab.json
+
+Final validation metrics:
+  Total loss: 3.9851
+  Word loss: 3.9821
+  End loss: 0.0030
+
+======================================================================
+Dataset Statistics:
+======================================================================
+Average tokens per sample: 256.0
+Min tokens: 256
+Max tokens: 256
+Total samples: 444
+
+======================================================================
+Format-Specific Tips:
+======================================================================
+
+📄 Plain Text File Tips:
+
+✓ Your file contains continuous text
+  Good for: books, articles, general text
+
+  Recommended chunking:
+    CHUNKING_MODE = 'sliding'
+    Adjust STRIDE for overlap control:
+      STRIDE = 64  (75% overlap, slower but thorough)
+      STRIDE = 128 (50% overlap, balanced)
+      STRIDE = 192 (25% overlap, faster)
+
+  Alternative chunking:
+    CHUNKING_MODE = 'paragraph' (natural boundaries)
+    CHUNKING_MODE = 'document' (maximum context)
+
+======================================================================
+Experimentation Guide:
+======================================================================
+
+🔬 Try These Combinations:
+
+For chatbot training:
+  • Use CSV with question,answer columns
+  • Set CHUNKING_MODE = 'conversation'
+  • Set TURNS_PER_CONVERSATION = 3-5
+
+For book/article learning:
+  • Use plain .txt file
+  • Set CHUNKING_MODE = 'sliding'
+  • Set STRIDE = 128 (50% overlap)
+  • Set MAX_SEQ_LEN = 256-512
+
+For reasoning experiments:
+  • Use CSV with question,bridge,answer columns
+  • Set CHUNKING_MODE = 'conversation'
+  • Experiment with TURNS_PER_CONVERSATION
+
+For maximum context:
+  • Set CHUNKING_MODE = 'document'
+  • Increase MAX_SEQ_LEN = 512+
+  • Reduce BATCH_SIZE if memory issues
+
+======================================================================
+
+✅ Training complete! Your model is ready to use.
+   Load with: torch.load('corpus_ancora_model.pt')
+   Vocab at: corpus_ancora_vocab.json
+
+======================================================================
