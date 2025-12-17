@@ -91,7 +91,7 @@ If you build upon, extend, or reference this work, academic citation or explicit
 If you use, implement, or build upon the Takens-Based Transformer, please cite the canonical paper:
 
 Kevin R. Haylett, Introducing the Takens-Based Transformer, December 2025.
-Available at: https://finitemechanics.com/papers/takens-transformer.pdf
+Available at: https://finitemechanics.com/papers/takens_transformer.pdf
 
 ### To cite the code repository
 
@@ -106,7 +106,7 @@ https://github.com/KevinHaylett/takens-embedding-transformer
 
 - https://www.finitemechanics.com  
 - https://kevinhaylett.substack.com  
-- https://www.geofinitism.com  
+- https://geofinitism.com  
 
 ---
 
